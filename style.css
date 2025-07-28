@@ -1,1 +1,24 @@
-body { font-family: sans-serif; background: #f8f9fa; }
+
+body { font-family: sans-serif; background-color: #f8f9fa; padding: 2rem; }
+h1 { text-align: center; }
+.container { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+.bloque { padding: 1rem; border-radius: 12px; width: 300px; }
+.bloque h2 { text-align: center; margin-bottom: 1rem; }
+
+.area-historia { background: #cce5ff; border: 2px solid #007bff; }
+.area-tecnologia { background: #d4edda; border: 2px solid #28a745; }
+.area-proyecto { background: #ffe5b4; border: 2px solid #ff9900; }
+.area-transversales { background: #f3d6ff; border: 2px solid #aa00aa; }
+.area-optativas { background: #e2e3e5; border: 2px solid #999; }
+
+.materia {
+    padding: 0.5rem 1rem;
+    margin: 0.3rem 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+.materia.aprobada { background-color: #d4edda; border-color: #28a745; text-decoration: line-through; }
+.materia.bloqueada { background-color: #f0f0f0; border-color: #aaa; color: #888; cursor: not-allowed; }

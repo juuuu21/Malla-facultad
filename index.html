@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Malla Curricular por Área</title>
+    <title>Malla Curricular - Arquitectura (Plan 2015)</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>📚 Malla Curricular - Arquitectura (Plan 2015)</h1>
     <div class="container">
+
         <div class="bloque area-historia">
             <h2>Historia, Teoría y Crítica</h2>
             <div class="materia" data-id="iniciacion">Iniciación a la Arquitectura</div>
@@ -22,12 +23,60 @@
             <div class="materia">Profundización 4</div>
             <div class="materia">Profundización 5</div>
             <div class="materia">Profundización 6</div>
-            <div class="materia">Profundización 7</div>
-            <div class="materia">Profundización 8</div>
-            <div class="materia">Profundización 9</div>
-            <div class="materia">Profundización 10</div>
-            <div class="materia bloqueada" data-id="arqlegal" data-previas="historia1,historia2,historia3,teoria_arq,teoria_urb,construccion3,transversal1,transversal2,transversal3,transversal4,transversal5">Arquitectura Legal</div>
+            <div class="materia bloqueada" data-id="arqlegal" data-previas="historia1,historia2,historia3,teoria_arq,teoria_urb,construccion3,transversal5">Arquitectura Legal</div>
         </div>
+
+        <div class="bloque area-tecnologia">
+            <h2>Tecnología</h2>
+            <div class="materia" data-id="matematicas">Principios Matemáticos</div>
+            <div class="materia" data-id="acond_natural">Acondicionamiento Natural</div>
+            <div class="materia" data-id="tec_integrada">Tecnología Integrada</div>
+            <div class="materia bloqueada" data-id="estructura1" data-previas="tec_integrada">Estructuras I</div>
+            <div class="materia bloqueada" data-id="construccion1" data-previas="tec_integrada">Construcción I</div>
+            <div class="materia bloqueada" data-id="instalaciones1" data-previas="tec_integrada,acond_natural">Instalaciones I</div>
+            <div class="materia bloqueada" data-id="instalaciones2" data-previas="tec_integrada,acond_natural">Instalaciones II</div>
+            <div class="materia bloqueada" data-id="estructura2" data-previas="estructura1">Estructuras II</div>
+            <div class="materia bloqueada" data-id="construccion2" data-previas="construccion1">Construcción II</div>
+            <div class="materia bloqueada" data-id="construccion3" data-previas="construccion2">Construcción III</div>
+            <div class="materia bloqueada" data-id="pdo" data-previas="estructura2,instalaciones2,construccion3,transversal5">Práctica y Dirección de Obra</div>
+        </div>
+
+        <div class="bloque area-proyecto">
+            <h2>Proyecto y Representación</h2>
+            <div class="materia" data-id="pyr1">PyR (sem 1)</div>
+            <div class="materia" data-id="pyr2">PyR (sem 2)</div>
+            <div class="materia bloqueada" data-id="p1" data-previas="pyr1,pyr2">P (sem 1)</div>
+            <div class="materia bloqueada" data-id="p2" data-previas="pyr1,pyr2">P (sem 2)</div>
+            <div class="materia bloqueada" data-id="peb1" data-previas="p1,p2">PEB (sem 1)</div>
+            <div class="materia bloqueada" data-id="peb2" data-previas="p1,p2">PEB (sem 2)</div>
+            <div class="materia bloqueada" data-id="pub1" data-previas="p1,p2">PUB (sem 1)</div>
+            <div class="materia bloqueada" data-id="pub2" data-previas="p1,p2">PUB (sem 2)</div>
+            <div class="materia bloqueada" data-id="pea" data-previas="peb1,pub1">PEA</div>
+            <div class="materia bloqueada" data-id="pte" data-previas="peb1,pub1">PTE</div>
+            <div class="materia bloqueada" data-id="tfc" data-previas="pea,pte,arqlegal,pdo">TFC</div>
+        </div>
+
+        <div class="bloque area-transversales">
+            <h2>Transversales</h2>
+            <div class="materia" data-id="transversal1">Transversal I: Sustentabilidad</div>
+            <div class="materia bloqueada" data-id="transversal2" data-previas="transversal1">Transversal II: Representación</div>
+            <div class="materia bloqueada" data-id="transversal3" data-previas="transversal2">Transversal III: Obra</div>
+            <div class="materia bloqueada" data-id="transversal4" data-previas="transversal2">Transversal IV: Patrimonio</div>
+            <div class="materia bloqueada" data-id="transversal5" data-previas="transversal2">Transversal V: Vivienda</div>
+        </div>
+
+        <div class="bloque area-optativas">
+            <h2>Optativas y Electivas</h2>
+            <div class="materia">Optativa de Inicio</div>
+            <div class="materia">Optativa</div>
+            <div class="materia">Optativa</div>
+            <div class="materia">Optativa</div>
+            <div class="materia">Optativa</div>
+            <div class="materia">Optativa</div>
+            <div class="materia">Electiva (X créditos)</div>
+            <div class="materia">Electiva (X créditos)</div>
+        </div>
+
     </div>
     <script src="script.js"></script>
 </body>
